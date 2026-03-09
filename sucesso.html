@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrícula enviada - Centro Educacional Rita Maia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-soft-bg success-page">
+  <main class="success-wrapper">
+    <section class="success-card">
+      <img src="img/logo.png" alt="Logo do Centro Educacional Rita Maia" class="form-logo">
+      <h1>Matrícula enviada com sucesso</h1>
+      <p>
+        Sua solicitação foi enviada para a secretaria do <strong>Centro Educacional Rita Maia</strong>.
+        Agora a equipe precisa <strong>validar a matrícula</strong> para liberar o acesso do aluno ao portal.
+      </p>
+
+      <div class="protocol-box">
+        <span>Seu número de protocolo</span>
+        <strong id="protocolo">Carregando...</strong>
+      </div>
+
+      <div class="agendamento-resumo" id="agendamentoResumo">
+        <h3>Agendamento solicitado</h3>
+        <p id="agendamentoTexto">Carregando...</p>
+      </div>
+
+      <div class="notice-box validation-box">
+        <h3>Próximo passo</h3>
+        <p>A secretaria vai validar sua matrícula e gerar o <strong>ID/login</strong> e a <strong>senha do portal do aluno</strong>.</p>
+        <p>Depois da validação, o aluno já poderá entrar no portal com os dados liberados pela secretaria.</p>
+      </div>
+
+      <div class="success-actions">
+        <button class="btn btn-primary" onclick="baixarComprovante()">Baixar comprovante</button>
+        <button class="btn btn-dark" onclick="voltarSite()">Voltar ao site</button>
+      </div>
+
+      <div class="notice-box">
+        <h3>Secretaria Escolar</h3>
+        <p>Telefone / WhatsApp: (91) 99906-9786</p>
+        <p>Instagram: @cermsip</p>
+        <p>Guarde o número de protocolo para acompanhar sua matrícula.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

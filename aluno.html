@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Aluno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+  <div class="admin-layout student-layout">
+    <aside class="admin-sidebar">
+      <div>
+        <img src="img/logo.png" alt="Logo da escola" class="sidebar-logo">
+        <h2>Portal do Aluno</h2>
+        <p id="alunoResumoLateral">Carregando dados do aluno...</p>
+      </div>
+
+      <nav class="admin-links">
+        <a href="#visao-geral">Visão geral</a>
+        <a href="#calendario">Calendário escolar</a>
+        <a href="#notas">Notas</a>
+        <a href="#historico">Histórico</a>
+        <a href="#horarios">Horários</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#mensalidades">Mensalidades</a>
+        <a href="index.html">Voltar ao site</a>
+      </nav>
+
+      <button class="btn btn-dark btn-full" id="btnLogoutAluno">Sair</button>
+    </aside>
+
+    <main class="admin-content">
+      <section class="admin-section" id="visao-geral">
+        <div class="section-header">
+          <div>
+            <h1 id="tituloAluno">Portal do aluno</h1>
+            <p id="subtituloAluno">Veja seus dados escolares atualizados pela secretaria.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid student-stats">
+          <article class="stat-card">
+            <span>Média geral</span>
+            <strong id="mediaGeralAluno">--</strong>
+          </article>
+          <article class="stat-card">
+            <span>Próxima avaliação</span>
+            <strong id="proximaAvaliacaoAluno">---</strong>
+          </article>
+          <article class="stat-card">
+            <span>Próximo vencimento</span>
+            <strong id="proximoVencimentoAluno">---</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="admin-section" id="calendario">
+        <div class="table-head">
+          <h2>Calendário escolar</h2>
+        </div>
+        <div class="cards-list" id="listaCalendarioAluno"></div>
+      </section>
+
+      <section class="admin-section" id="notas">
+        <div class="table-head">
+          <h2>Notas por disciplina</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th>1ª Nota</th>
+                <th>2ª Nota</th>
+                <th>3ª Nota</th>
+                <th>4ª Nota</th>
+                <th>Média</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="listaNotasAluno"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section" id="historico">
+        <div class="table-head">
+          <h2>Histórico escolar</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Ano letivo</th>
+                <th>Série</th>
+                <th>Situação</th>
+                <th>Observação</th>
+              </tr>
+            </thead>
+            <tbody id="listaHistoricoAluno"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section" id="horarios">
+        <div class="table-head">
+          <h2>Grade de horários</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Disciplina</th>
+                <th>Horário</th>
+                <th>Professor</th>
+              </tr>
+            </thead>
+            <tbody id="listaHorariosAluno"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section" id="avaliacoes">
+        <div class="table-head">
+          <h2>Avaliações programadas</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Tipo</th>
+                <th>Conteúdo</th>
+              </tr>
+            </thead>
+            <tbody id="listaAvaliacoesAluno"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="admin-section" id="mensalidades">
+        <div class="table-head">
+          <h2>Mensalidades</h2>
+        </div>
+        <div class="cards-list" id="listaMensalidadesAluno"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Aluno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <main class="login-wrap">
+    <section class="login-card portal-card">
+      <img src="img/logo.png" alt="Logo da escola" class="form-logo">
+      <h1>Portal do Aluno</h1>
+      <p>Entre com o ID da matrícula ou protocolo e a senha liberada pela secretaria.</p>
+
+      <form id="formLoginAluno" class="login-form">
+        <label for="alunoProtocolo">ID / Protocolo da matrícula</label>
+        <input type="text" id="alunoProtocolo" placeholder="Ex.: AG-12345678 ou CERM-123456" required>
+
+        <label for="alunoSenha">Senha do portal</label>
+        <div class="password-field">
+          <input type="password" id="alunoSenha" placeholder="Senha liberada pela secretaria" required>
+          <button type="button" id="toggleSenhaAluno" class="toggle-password" aria-label="Mostrar senha" aria-pressed="false">👁</button>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Entrar no portal</button>
+      </form>
+
+      <div class="portal-help">
+        <p><strong>Atenção:</strong> o acesso só é liberado depois que a secretaria validar a matrícula.</p>
+        <a href="matricula.html" class="btn btn-dark btn-full">Ainda não tenho matrícula</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="portal.js"></script>
+</body>
+</html>

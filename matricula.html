@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrícula - Centro Educacional Rita Maia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-soft-bg">
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand" aria-label="Página inicial do Centro Educacional Rita Maia">
+        <img src="img/logo.png" alt="Logo do Centro Educacional Rita Maia">
+        <span>Centro Educacional Rita Maia</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="matricula.html" class="active">Matrícula</a>
+        <a href="portal-aluno.html">Portal do Aluno</a>
+        <a href="login.html">Secretaria</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-page">
+    <section class="form-wrapper">
+      <div class="form-card">
+        <div class="topo-formulario">
+          <img src="img/logo.png" alt="Logo da escola" class="form-logo">
+          <h1>Ficha de Matrícula</h1>
+          <p>Preencha os dados do aluno, do responsável e escolha um horário de agendamento.</p>
+        </div>
+
+        <form id="formMatricula" class="matricula-form">
+          <div class="grid-form">
+            <div class="field full">
+              <label for="nome">Nome do aluno</label>
+              <input type="text" id="nome" required>
+            </div>
+
+            <div class="field">
+              <label for="nascimento">Data de nascimento</label>
+              <input type="date" id="nascimento" required>
+            </div>
+
+            <div class="field">
+              <label for="serie">Série</label>
+              <select id="serie" required>
+                <option value="">Selecione</option>
+                <option>Maternal</option>
+                <option>1º Ano</option>
+                <option>2º Ano</option>
+                <option>3º Ano</option>
+                <option>4º Ano</option>
+                <option>5º Ano</option>
+                <option>6º Ano</option>
+                <option>7º Ano</option>
+                <option>8º Ano</option>
+                <option>9º Ano</option>
+                <option>1º Ano do Ensino Médio</option>
+                <option>2º Ano do Ensino Médio</option>
+                <option>3º Ano do Ensino Médio</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="precoBox" class="price-box">
+            <h3>Informações de Pagamento</h3>
+            <p id="matriculaPreco"></p>
+            <p id="mensalidadePreco"></p>
+            <p id="materialPreco"></p>
+          </div>
+
+          <div class="grid-form">
+            <div class="field full">
+              <label for="responsavel">Responsável</label>
+              <input type="text" id="responsavel" required>
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" placeholder="(91) 99999-9999" required>
+            </div>
+
+            <div class="field">
+              <label for="observacao">Observação sobre o aluno</label>
+              <input type="text" id="observacao" placeholder="Opcional">
+            </div>
+          </div>
+
+          <div class="documents-box">
+            <h3>Agendamento de Atendimento</h3>
+            <div class="grid-form">
+              <div class="field">
+                <label for="agendamentoData">Data do agendamento</label>
+                <input type="date" id="agendamentoData" required>
+              </div>
+
+              <div class="field">
+                <label for="agendamentoHora">Hora do agendamento</label>
+                <input type="time" id="agendamentoHora" required>
+              </div>
+            </div>
+            <p class="small-note">A secretaria receberá a ID, a data e a hora do agendamento junto com a matrícula.</p>
+          </div>
+
+          <div class="documents-box">
+            <h3>Documentos</h3>
+            <div class="grid-form">
+              <div class="field">
+                <label for="certidao">Certidão de nascimento</label>
+                <input type="file" id="certidao">
+              </div>
+
+              <div class="field">
+                <label for="rg">RG do responsável</label>
+                <input type="file" id="rg">
+              </div>
+
+              <div class="field full">
+                <label for="residencia">Comprovante de residência</label>
+                <input type="file" id="residencia">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar Matrícula</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

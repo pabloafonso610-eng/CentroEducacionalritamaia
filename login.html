@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login da Secretaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <main class="login-wrap">
+    <section class="login-card">
+      <img src="img/logo.png" alt="Logo da escola" class="form-logo">
+      <h1>Área da Secretaria</h1>
+      <p>Somente a secretaria deve acessar este painel.</p>
+
+      <form id="formLoginSecretaria" class="login-form">
+        <label for="usuario">Login</label>
+        <input type="text" id="usuario" placeholder="Digite o login" required autocomplete="username">
+
+        <label for="senha">Senha</label>
+        <div class="password-field">
+          <input type="password" id="senha" placeholder="Digite a senha" required autocomplete="current-password">
+          <button type="button" class="toggle-password" id="toggleSenha" aria-label="Mostrar ou ocultar senha" aria-pressed="false">👁</button>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+      </form>
+
+      <p class="login-tip">A senha fica oculta e só aparece quando o olhinho é apertado.</p>
+    </section>
+  </main>
+
+  <script src="secretaria.js"></script>
+</body>
+</html>
